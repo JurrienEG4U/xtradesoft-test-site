@@ -7,7 +7,8 @@ $ORIGIN_ID = '58e3eca0e4b02656d9c3382e';
 if(!empty($_POST)) {
   $data = json_encode([
     'userName' => $_POST['userName'],
-    'password' => $_POST['password']
+    'password' => $_POST['password'],
+    'targetPage' => '/search/tournaments/de-batouwe'
   ]);
 
   $curlurl = "$SUITE_URL?authToken=$AUTH_TOKEN&origin=$ORIGIN_ID";
@@ -39,5 +40,6 @@ if(!empty($_POST)) {
     ]));
   }
 } else {
-  die('NO');
+  header('HTTP/1.0 403 Forbidden');
+  die('Forbidden');
 }

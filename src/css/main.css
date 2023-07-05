@@ -42,9 +42,9 @@
 	--background-color: #0e1015;
 	--background-color-light: #ecf0f1;
 	--text-color: #575859;
-	--accent-color: #f26522;
+	--accent-color: #56b9f1;
 	--accent-hover-color: #000000;
-	--accent-hover-alt: #e3520d;
+	--accent-hover-alt: #27a5ed;
 	--header-color: #252525;
 	--lead-color: #707273;
 	--muted-color: #7d7e80;
@@ -64,18 +64,9 @@
 	--button-background-color: #818fab;
 	--button-hover-color: #647495;
 	--button-text-color: #ffffff;
-	--button-accent-color: #d44d0d;
+	--button-accent-color: #27a5ed;
 	--button-accent-hover: #faec09;
 
-	--alert-error-background: #ffd1d2;
-	--alert-error-text: #e65153;
-	--alert-success-background: #c8e675;
-	--alert-success-text: #758c36;
-	--alert-info-background: #d7ecfb;
-	--alert-info-text: #4a95cc;
-	--alert-notice-background: #fff099;
-	--alert-notice-text: #c16527;
-	
 	--stats-border: #cccccc;
 
 	--pagination-background: #dde4e6;
@@ -91,24 +82,34 @@
 
 	--photostream-border: #e3e9eb;
 
-	--footer-text: #3c4142;
-	--footer-nav: #a43b0a;
+	--footer-text: #8f9091;
+	--footer-nav: #196c9c;
 	--footer-nav-hover: #ffffff;
 	--footer-header: #ffffff;
 
 	--entry-text: #8f9091;
 
 	--hero-text: #ffffff;
-	--hero-accent: #a43b0a;
+	--hero-accent: #196c9c;
 	--hero-border: #9a9103;
-	--hero-button: #d44d0d;
+	--hero-button: #56b9f1;
 
-	--contact-background: #12151b;
-	--contact-input-label: var(--muted-color);
-	--contact-input-border: #575859;
+	--contact-background: white;
+	--contact-header: #12151b;
+	--contact-input-label: #8f9091;
+	--contact-input-border: #8f9091;
 	--contact-input-text: #ffffff;
 	--contact-warning: #ff6163;
 	--contact-success: #ffd900;
+	
+	--alert-error-background: #ffd1d2;
+	--alert-error-text: #e65153;
+	--alert-success-background: #c8e675;
+	--alert-success-text: #758c36;
+	--alert-info-background: #d7ecfb;
+	--alert-info-text: #4a95cc;
+	--alert-notice-background: #fff099;
+	--alert-notice-text: #4a95cc;
 }
 
 /* 
@@ -1700,7 +1701,7 @@ hr {
 	max-width: 784px;
 }
 #contact h1, #login h1 {
-	color: white;
+	color: var(--contact-header);
 }
 
 /* contact form */
@@ -1772,7 +1773,7 @@ hr {
 /* messages */
 #message-warning, #message-success {
 	display: none;
-	background: black;
+	background: var(--contact-background);
 	padding: 24px 24px;
 	margin-bottom: 42px;
 	border-radius: 3px;
