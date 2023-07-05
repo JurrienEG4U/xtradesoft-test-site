@@ -45,6 +45,7 @@ This will return the following information:
 |:--- |:---- |:--- |
 | `success` | `boolean` | Did the request succeed? |
 | `data`    | `string`  | The login URL which will automatically log the user into the Nexxchange Marketplace |
+| `error`   | `string`  | If the request failed, this field will contain the error and will not exist on a successful request |
 
 In case this request fails, `success` will be `false` and an `error` field will be present, showing the reason for failure.
 
@@ -69,7 +70,11 @@ if(!empty($_POST)) {
   ]);
 
   // Prepare the connection
-  $c = curl_init("$SUITE_URL?authToken=$AUTH_TOKEN&origin=$ORIGIN_ID");
+  $url = $SUITE_URL . '?' . http_build_query([
+    'authToken' => $AUTH_TOKEN,
+    'origin' => $ORIGIN_ID
+  ])
+  $c = curl_init($url);
 
   if (defined('CURLOPT_IPRESOLVE') && defined('CURL_IPRESOLVE_V4')){
     curl_setopt($c, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
