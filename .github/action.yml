@@ -1,0 +1,45 @@
+name: 'Rsync deployment'
+description: 'An action that deploys a static website using rsync.'
+branding:
+  icon: 'upload-cloud'
+  color: 'blue'
+
+inputs:
+  DEPLOY_KEY:
+    description: 'private key to connect to server'
+    required: true
+  DEPLOY_USER:
+    description: 'user to use to connect with the server'
+    required: false
+    default: github
+  DEPLOY_HOST:
+    description: 'hostname of the server'
+    required: true
+  DEPLOY_PORT:
+    description: 'port to the server'
+    required: false
+    default: 22
+  DEPLOY_DEST:
+    description: 'path on the server'
+    required: false
+    default: '/var/www/html/'
+  RSYNC_ARGUMENTS:
+    description: 'Rsync arguments'
+    required: false
+    default: '--archive --compress --xattrs --delete --stats --verbose'
+  RSYNC_EXTRA_ARGUMENTS:
+    description: 'Rsync extra arguments'
+    required: false
+    default: ''
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.DEPLOY_KEY }}
+    - ${{ inputs.DEPLOY_USER }}
+    - ${{ inputs.DEPLOY_HOST }}
+    - ${{ inputs.DEPLOY_PORT }}
+    - ${{ inputs.DEPLOY_DEST }}
+    - ${{ inputs.RSYNC_ARGUMENTS }}
+    - ${{ inputs.RSYNC_EXTRA_ARGUMENTS }}
