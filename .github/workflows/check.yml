@@ -1,0 +1,22 @@
+name: Check
+
+on:
+  push:
+    branches: [ "*", '!master' ]
+  pull_request:
+    branches: [ "*" ]
+
+jobs:
+
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Deploy application
+        uses: ./.github/
+        with:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+          DEPLOY_HOST: 149.210.229.25
+          DEPLOY_PORT: 22209
+          RSYNC_EXTRA_ARGUMENTS: '--dry-run'
