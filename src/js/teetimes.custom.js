@@ -21,7 +21,7 @@ jQuery(document).ready(function onReady() {
     // listen to changing the course index
     jQuery('select.widget-input').change(function() {
       jQuery('#teetimecontainer').teetime('reload', {
-        date: jQuery("#datepicker").val(),
+        date: jQuery("#altFormat").val(),
         course: jQuery(this).find(":selected").val()
       })
     });
@@ -29,10 +29,12 @@ jQuery(document).ready(function onReady() {
     // configure datepicker
     jQuery( "#datepicker" ).datepicker({
         "dateFormat": "dd-mm-yy",
+        "altFormat": "dd.mm.yy",
+        "altField": "#altFormat",
         "minDate": 0,
         "onSelect": function(date, inst) {
             jQuery('#teetimecontainer').teetime('reload', {
-              date: jQuery("#datepicker").val(),
+              date: jQuery("#altFormat").val(),
               course: jQuery('select.widget-input').find(":selected").val()
             });
         }
@@ -43,5 +45,6 @@ jQuery(document).ready(function onReady() {
     var yyyy = today.getFullYear();
 
     jQuery( "#datepicker").val(dd + "-" + mm + "-" + yyyy);
+    jQuery( "#altFormat").val(dd + "." + mm + "." + yyyy);
 
 });
