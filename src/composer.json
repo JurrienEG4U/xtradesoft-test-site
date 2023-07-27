@@ -1,0 +1,33 @@
+{
+    "name": "xtradesof/demo-site",
+    "description": "a demo site for nexxchange",
+    "keywords": ["composer", "docker", "devcontainer"],
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ronexxchange",
+            "email": "ron.vanderheijden@nexxchange.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0 || ^8.1 || ^8.2"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {}
+    },
+    "autoload-dev": {
+        "psr-4": {}
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "scripts": {
+        "phpstan": "./vendor/bin/phpstan analyse --level 6 inc"
+    }
+}
