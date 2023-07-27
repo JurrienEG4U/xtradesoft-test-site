@@ -1,6 +1,6 @@
 # Demo Site
 
-Html source can be found in `src/`.
+Html source can be found in `src/`.  
 The authentication script is `src/auth.php`.
 
 ## Running

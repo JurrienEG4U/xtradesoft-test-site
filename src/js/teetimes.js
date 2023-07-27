@@ -6,9 +6,9 @@ jQuery.widget( "nexxchange.teetime", {
         onlyShowAvailable: false,
         course: null,
         i18n: {
-            booking: "Buchen",
-            available: "verfügbar",
-            noGreenfees: 'Keine Startzeiten für den ausgewählten Zeitraum verfügbar.'
+            booking: "Boeken",
+            available: "beschikbaar",
+            noGreenfees: 'Geen starttijden beschikbaar voor de geselecteerde periode.'
         }
     },
     _create: function () {
