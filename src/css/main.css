@@ -1740,8 +1740,8 @@ hr {
 #login input:focus,
 #login textarea:focus,
 #login select:focus {
-	color: var(--contact-input-text);
-	border-color: var(--contact-input-text);
+	color: var(--contact-header);
+	border-color: var(--contact-header);
 }
 #contact button.submit, #login button.submit {
 	text-transform: uppercase;
