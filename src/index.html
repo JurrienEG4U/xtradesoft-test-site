@@ -20,6 +20,7 @@
 
   <!-- CSS
     ================================================== -->
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/media-queries.css" />
@@ -86,7 +87,7 @@
                   Welkom bij Groenstaete.
                 </h1>
                 <p>
-                  <a class="button stroke smoothscroll" href="#services">Over Ons</a>
+                  <a class="button stroke smoothscroll" href="#services">Onze services</a>
                 </p>
               </div>
             </li>
@@ -98,7 +99,7 @@
                   Login op de ledenwebsite.
                 </h1>
                 <p>
-                  <a class="button stroke smoothscroll" href="#login">Login</a>
+                  <a class="button stroke smoothscroll" href="#login">Inloggen voor leden</a>
                 </p>
               </div>
             </li>
@@ -122,31 +123,25 @@
         <hr />
 
         <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-          quae ab illo inventore veritatis et quasi architecto beatae vitae
-          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-          aspernatur aut odit aut fugit.
+          ....
         </p>
       </div>
     </div>
 
     <div class="row">
       <div class="twelve columns">
-        <div class="service-list bgrid-third s-bgrid-half mob-bgrid-whole">
+        <div class="service-list bgrid-fourth s-bgrid-half mob-bgrid-whole">
+
           <div class="bgrid">
             <div class="icon-part">
               <span class="icon-graph"></span>
             </div>
 
-            <h3>Marketing.</h3>
+            <h3>Direct naar portaal.</h3>
 
             <div class="service-content">
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque
-                ipsa quae ab illo inventore veritatis et quasi architecto
-                beatae vitae dicta sunt explicabo.
+                <a href="https://devngf.nexxchange.com/" target="_blank" class="button">Ga naar de portaal</a>
               </p>
             </div>
           </div>
@@ -157,14 +152,11 @@
               <i class="icon-film"></i>
             </div>
 
-            <h3>Videography.</h3>
+            <h3>Widgets.</h3>
 
             <div class="service-content">
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque
-                ipsa quae ab illo inventoveritatis et quasi architecto beatae
-                vitae dicta sunt explicabo.
+                <a href="/widgets.html" class="button">Bekijk onze widget</a>
               </p>
             </div>
           </div>
@@ -175,19 +167,43 @@
               <i class="icon-camera"></i>
             </div>
 
-            <h3>Photography.</h3>
+            <h3>Popup.</h3>
 
             <div class="service-content">
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque
-                ipsa quae ab illo inventore veritatis et quasi architecto
-                beatae vitae dicta sunt explicabo.
+                <!-- your content here... -->
+                <button onclick="popupCenter({url: 'https://devngf.nexxchange.com/search/teetimes/groenstaetetest', 'myWindow': 'groenstaetetest', w: 800, h: 1000})" class="teetimeBtn">Open de popup</button>
               </p>
             </div>
           </div>
           <!-- /bgrid -->
 
+          <div class="bgrid">
+            <div class="icon-part">
+              <i class="icon-screen-desktop"></i>
+            </div>
+
+            <h3>Modal.</h3>
+
+            <div class="service-content">
+              <p>
+                <button id="opener">Open Dialog</button>
+                <div id="dialog" title="Tee Time">
+                  <p>
+                    <div><p>Datum: <input type="text" id="datepicker" class="widget-input"> <select class="widget-input">
+                      <option value="1">Appellus Tee 1</option>
+                      <option value="2">Kerslus Tee 10</option>
+                      <option value="3">Par 3</option>
+                    </select></p></div>
+                    <div id="teetimecontainer" class="well col-md-12 table-responsive" style="overflow: auto;"></div>
+                  </p>
+                </div>
+              </p>
+            </div>
+          </div>
+          <!-- /bgrid -->
+
+          <!--
           <div class="bgrid first">
             <div class="icon-part">
               <i class="icon-eye"></i>
@@ -206,6 +222,7 @@
           </div>
           <!-- /bgrid -->
 
+          <!--
           <div class="bgrid">
             <div class="icon-part">
               <i class="icon-screen-desktop"></i>
@@ -224,6 +241,7 @@
           </div>
           <!-- /bgrid -->
 
+          <!--
           <div class="bgrid">
             <div class="icon-part">
               <i class="icon-eyeglasses"></i>
@@ -359,9 +377,8 @@
   <!-- Java Script
    ================================================== -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>');
-  </script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>');</script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
   <script src="js/jquery.flexslider.js"></script>
   <script src="js/jquery.fittext.js"></script>
@@ -369,6 +386,55 @@
   <script src="js/waypoints.js"></script>
   <script src="js/main.js"></script>
   <script src="js/login.js"></script>
+
+	<!-- sample calls of wiget code  -->
+	<script type="text/javascript">
+		jQuery(document).ready(function onReady() {
+      $("#dialog").dialog({
+        autoOpen: false,
+        minWidth: 800,
+        minHeight: 600,
+        maxHeight: $(window).height() - 100,
+        resizable: false
+      });
+
+      $("#opener").on("click", function() {
+        $("#dialog").dialog("open");
+      });
+
+      // disable autofocus on modal fields
+      $.ui.dialog.prototype._focusTabbable = function(){};
+		});
+	</script>
+
+   <!-- teetimes -->
+   <script src="js/teetimes.js" type="text/javascript"></script>
+   <script src="js/teetimes.custom.js" type="text/javascript"></script>
+  <script>
+  	const popupCenter = ({url, title, w, h}) => {
+    // Fixes dual-screen position                             Most browsers      Firefox
+    const dualScreenLeft = window.screenLeft !==  undefined ? window.screenLeft : window.screenX;
+    const dualScreenTop = window.screenTop !==  undefined   ? window.screenTop  : window.screenY;
+
+    const width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+    const height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+    const systemZoom = width / window.screen.availWidth;
+    const left = ((width - w) - 150) / systemZoom + dualScreenLeft
+    const top = (height - h) / 2 / systemZoom + dualScreenTop
+    const newWindow = window.open(url, title,
+      `
+      scrollbars=yes,
+      width=${w / systemZoom},
+      height=${h / systemZoom},
+      top=${top},
+      left=${left}
+      `
+    )
+
+    if (window.focus) newWindow.focus();
+}
+  </script>
 </body>
 
 </html>
