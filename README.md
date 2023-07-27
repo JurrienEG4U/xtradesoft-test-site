@@ -1,6 +1,6 @@
 # Demo Site
 
-Html source can be found in `src/`.  
+Html source can be found in `src/`.
 The authentication script is `src/auth.php`.
 
 ## Running
@@ -8,6 +8,7 @@ The authentication script is `src/auth.php`.
 It runs on docker:
 
 ```
+cp -n .env{.example,}
 docker compose up -d
 ```
 
@@ -35,3 +36,7 @@ Only configuration of styling is present in `src/css/main.css`.
   [...]
 ```
 
+## PHPStan
+```sh
+docker-compose exec php composer phpstan
+```
