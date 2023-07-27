@@ -1,15 +1,15 @@
 /* =================================================================== */
-/* 
+/*
 /*  Puremedia v1.0 Main Stylesheet
 /*  url:styleshout.com
 /*  10-10-2014
 /*
-/*  ------------------------------------------------------------------ 
+/*  ------------------------------------------------------------------
 
-    TOC: 
+    TOC:
     a. Webfonts and Iconfonts
     b. Document Setup
-    c. Forms  
+    c. Forms
     d. Preloader
     e. Buttons
     f. Other Components
@@ -28,7 +28,7 @@
 
 /* =================================================================== */
 
-/* 
+/*
 /* a. Webfonts and Iconfonts
 /* =================================================================== */
 @import url("fonts.css");
@@ -101,7 +101,7 @@
 	--contact-input-text: #ffffff;
 	--contact-warning: #ff6163;
 	--contact-success: #ffd900;
-	
+
 	--alert-error-background: #ffd1d2;
 	--alert-error-text: #e65153;
 	--alert-success-background: #c8e675;
@@ -112,7 +112,7 @@
 	--alert-notice-text: #4a95cc;
 }
 
-/* 
+/*
 /* b. Document Setup
 /* =================================================================== */
 
@@ -311,7 +311,7 @@ img.pull-left {
 	margin: 12px 18px 0px 0px;
 }
 
-/* 
+/*
 /* c. Forms
 /* =================================================================== */
 form {
@@ -325,10 +325,10 @@ fieldset {
 input, button {
 	-webkit-font-smoothing: antialiased;
 }
-input[type="text"], 
-input[type="password"], 
-input[type="email"], 
-textarea, 
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
 select {
 	display: block;
 	padding: 12px 15px;
@@ -348,9 +348,9 @@ select {
 textarea {
 	min-height: 162px;
 }
-input[type="text"]:focus, 
-input[type="password"]:focus, 
-input[type="email"]:focus, 
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
 textarea:focus {
 	background: var(--border-light-color);
 }
@@ -372,7 +372,7 @@ input[type="checkbox"] {
 	display: inline;
 }
 
-/* 
+/*
 /* d. Preloader
 /* =================================================================== */
 #preloader {
@@ -449,14 +449,14 @@ input[type="checkbox"] {
 }
 
 
-/* 
+/*
 /* e. Buttons
 /* =================================================================== */
-.button, 
-.button:visited, 
-button, 
-input[type="submit"], 
-input[type="reset"], 
+.button,
+.button:visited,
+button,
+input[type="submit"],
+input[type="reset"],
 input[type="button"] {
 	display: inline-block;
 	font: 15px/30px "raleway-bold", sans-serif;
@@ -471,17 +471,17 @@ input[type="button"] {
 	border: none;
 	border-radius: 3px;
 	-webkit-appearance: none;
-	-webkit-font-smoothing: inherit;	
+	-webkit-font-smoothing: inherit;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.button:hover, 
-button:hover, 
-input[type="submit"]:hover, 
-input[type="reset"]:hover, 
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
 input[type="button"]:hover {
 	background: var(--button-hover-color);
 	color: var(--button-text-color);
@@ -647,7 +647,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/* 
+/*
 /* f. Other Components
 /* ================================================================== */
 
@@ -737,7 +737,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	content: counter(definitions, decimal) ". ";
 }
 
-/* 
+/*
 /*  Pull Quotes Markup
 /*
 
@@ -777,7 +777,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	content: none;
 }
 
-/* 
+/*
 /*  Stats Tab Markup
 
 <ul class="stats-tabs">
@@ -861,7 +861,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: var(--pagination-inactive-text);
 }
 
-/* 
+/*
 /* g. Header Styles
 /* =================================================================== */
 header {
@@ -942,7 +942,7 @@ header .logo a {
 }
 ul#nav {
 	min-height: 72px;
-	width: auto; 
+	width: auto;
 
 	/* left align the menu */
 	text-align: left;
@@ -977,7 +977,7 @@ ul#nav li.current a {
 }
 
 
-/* 
+/*
 /* h. Content Styles
 /* =================================================================== */
 
@@ -1109,7 +1109,7 @@ ul#nav li.current a {
 }
 
 
-/* 
+/*
 /* i. Footer Styles
 /* =================================================================== */
 footer {
@@ -1195,7 +1195,7 @@ footer #go-top a:hover {
 }
 
 
-/* 
+/*
 /* j. Common and shared styles
 /* =================================================================== */
 
@@ -1251,7 +1251,7 @@ hr {
 	color: white;
 	letter-spacing: -1px;
 	margin-bottom: 0;
-	text-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);	
+	text-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
 }
 #page-title h1 span {
 	color: var(--accent-color);
@@ -1274,7 +1274,7 @@ hr {
 	background: transparent;
 	text-align: left;
 }
-.entry header h1 {	
+.entry header h1 {
 	font: 30px/36px "raleway-bold", sans-serif;
 	margin-bottom: 6px;
 }
@@ -1318,7 +1318,7 @@ hr {
 	text-shadow: none;
 	color: transparent;
 }
-.pagenav a[rel="next"]:after, 
+.pagenav a[rel="next"]:after,
 .pagenav a[rel="prev"]:before {
 	float: left;
 	text-align: center;
@@ -1351,7 +1351,7 @@ hr {
 	margin-top: -18px;
 }
 
-/* 
+/*
 /* k. Hero Section
 /* =================================================================== */
 #hero {
@@ -1447,13 +1447,13 @@ hr {
 	margin-bottom: 36px;
 	text-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
 }
-#hero-slider .flex-caption h1 span, 
+#hero-slider .flex-caption h1 span,
 #hero-slider .flex-caption h1 a {
 	color: var(--hero-text);
 	display: inline-block;
 	border-bottom: 1px solid var(--hero-accent);
 }
-#hero-slider .flex-caption h1 span:hover, 
+#hero-slider .flex-caption h1 span:hover,
 #hero-slider .flex-caption h1 a:hover {
 	border-color: var(--hero-border);
 }
@@ -1515,7 +1515,7 @@ hr {
 	cursor: default;
 }
 
-/* 
+/*
 /*  m. Services Section
 /* =================================================================== */
 #services {
@@ -1552,7 +1552,7 @@ hr {
 }
 
 
-/* 
+/*
 /*  n. About Section
 /* =================================================================== */
 
@@ -1649,7 +1649,7 @@ hr {
 }
 
 
-/* 
+/*
 /*  o. Journal Section
 /* =================================================================== */
 #journal {
@@ -1688,7 +1688,7 @@ hr {
 }
 
 
-/* 
+/*
 /*  p. Contact Section
 /* =================================================================== */
 #contact, #login {
@@ -1718,11 +1718,11 @@ hr {
 	color: var(--accent-color);
 	display: inline-block;
 }
-#contact input, 
-#contact textarea, 
+#contact input,
+#contact textarea,
 #contact select,
-#login input, 
-#login textarea, 
+#login input,
+#login textarea,
 #login select {
 	padding: 18px 20px;
 	margin-bottom: 42px;
@@ -1734,11 +1734,11 @@ hr {
 #contact textarea, #login textarea {
 	height: 252px;
 }
-#contact input:focus, 
-#contact textarea:focus, 
+#contact input:focus,
+#contact textarea:focus,
 #contact select:focus,
-#login input:focus, 
-#login textarea:focus, 
+#login input:focus,
+#login textarea:focus,
 #login select:focus {
 	color: var(--contact-input-text);
 	border-color: var(--contact-input-text);
@@ -1818,7 +1818,7 @@ hr {
 }
 
 
-/* 
+/*
 /* q. Blog Entry
 /* =================================================================== */
 
@@ -1901,7 +1901,7 @@ hr {
 }
 .commentlist li ul.children li {
 	padding-left: 5%;
-	padding-top: 18px;	
+	padding-top: 18px;
 }
 
 /* comment form
@@ -1920,8 +1920,8 @@ hr {
 #comments form div {
 	margin: 12px 0 18px 0;
 }
-#comments form input, 
-#comments form textarea, 
+#comments form input,
+#comments form textarea,
 #comments form select {
 	width: 58.33333%;
 	float: left;
@@ -1951,7 +1951,7 @@ hr {
 }
 
 
-/* 
+/*
 /* r. Portfolio Entry
 /* =================================================================== */
 
@@ -1973,6 +1973,7 @@ hr {
 
 /* more projects
 /* ------------------------------------------------------------------- */
+
 .more-projects {
 	margin-top: 60px;
 }
@@ -1984,3 +1985,43 @@ hr {
 .more-projects .portfolio-wrapper {
 	text-align: left;
 }
+
+
+/* widgets
+/* ------------------------------------------------------------------- */
+table.golfCourse {
+	width: 100%;
+}
+
+table.golfCourse tr:nth-child(even) {
+	padding: 0 0 5px 5px;
+	margin: 4px 3px;
+	background-color: #f4f5f6;
+	border-radius: 10px;
+	border: 1px solid #e8e9ec;
+}
+
+table.golfCourse .gfTime {
+    width: 15%;
+}
+
+table.golfCourse .gfAvailable {
+    width: 18%;
+}
+
+table.golfCourse td > .gfBookingButton {
+    margin-left: 10px;
+    text-decoration: underline;
+    width: 55%;
+}
+
+.widget-input {
+	display: inline-block !important;
+}
+
+select.widget-input {
+	height: 54px;
+}
+
+.ui-widget-content a {color: var(--accent-color);}
+.ui-dialog {z-index: 999;}
