@@ -23,7 +23,13 @@
         } else if(!result.url) {
           $('#message-warning').text('Something went wrong, try again later').show()
         } else {
-          window.location = result.url
+          $.ajax({
+            url: result.url,
+            xhrFields: {
+              withCredentials: true
+            }
+          });
+          $('#login').hide();
         }
       },
       dataType: 'json'
