@@ -1,14 +1,14 @@
 <?php
 
-$SUITE_URL = 'http://host.docker.internal:8080/golfsuite/thirdPartyAuth/validate';
+$SUITE_URL = 'https://node06.nexxchange.com/ngftest/thirdPartyAuth/validate';
 $AUTH_TOKEN = '2c0f0b5d-68b1-4e4f-9711-3c741863ddbd';
-$ORIGIN_ID = '58e3eca0e4b02656d9c3382e';
+$ORIGIN_ID = '61791b74e07dff5a6d742103';
 
 if(!empty($_POST)) {
   $data = json_encode([
     'userName' => $_POST['userName'],
     'password' => $_POST['password'],
-    'targetPage' => '/search/tournaments/de-batouwe'
+    'targetPage' => 'http://groenstaete.com'
   ]);
 
   $curlurl = "$SUITE_URL?authToken=$AUTH_TOKEN&origin=$ORIGIN_ID";

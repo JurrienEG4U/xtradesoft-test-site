@@ -1,0 +1,69 @@
+table.golfCourse {
+    width: 100%;
+}
+
+table.golfCourse tr:nth-child(even) {
+    padding: 0 0 5px 5px;
+    margin: 4px 3px;
+    background-color: #f4f5f6;
+    border-radius: 10px;
+    border: 1px solid #e8e9ec;
+}
+
+table.golfCourse .gfTime {
+    width: 15%;
+}
+
+table.golfCourse .gfAvailable {
+    width: 18%;
+}
+
+table.golfCourse td > .gfBookingButton {
+    margin: 10px 6px;
+}
+
+.widget-input {
+    display: inline-block !important;
+}
+
+select.widget-input {
+    height: 54px;
+}
+
+.ui-widget-content a {color: var(--accent-color);}
+.ui-dialog {z-index: 999;}
+
+.golfCourse .btn {
+    padding: 6px 1rem;
+}
+
+.btn-success {
+    color: #fff !important;
+    background-color: #5cb85c;
+    border-color: #5cb85c !important;
+    border-radius: 5px !important;
+}
+
+.golfCourse td .btn-success:nth-child(even) {
+    background: #27a5ed;
+    border-color: #27a5ed !important;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border-radius: var(--border-radius);
+    border: 2px solid transparent;
+    font-weight: bold;
+}
+
+.golfCourse a, .golfCourse a:visited, .golfCourse a:hover, .golfCourse a:focus {
+    color: #fff;
+}
